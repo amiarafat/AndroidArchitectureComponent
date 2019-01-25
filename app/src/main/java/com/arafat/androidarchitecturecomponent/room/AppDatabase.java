@@ -19,5 +19,5 @@ public abstract class AppDatabase extends RoomDatabase {
         return instance;
     }
 
-    protected abstract BorrowModelDao itemAndPersonModel();
+    public abstract BorrowModelDao itemAndPersonModel();
 }

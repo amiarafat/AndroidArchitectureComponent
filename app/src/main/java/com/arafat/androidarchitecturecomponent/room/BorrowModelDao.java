@@ -17,7 +17,7 @@ import static android.arch.persistence.room.OnConflictStrategy.REPLACE;
 @TypeConverters(DateConverter.class)
 public interface BorrowModelDao {
 
-    @Query("select 8 from BorrowModel")
+    @Query("select * from BorrowModel")
     LiveData<List<BorrowModel>> getAllBorrowedItems();
 
     @Query("select * from BorrowModel where id = :id")
